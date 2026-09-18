@@ -10,6 +10,12 @@ gradient of whichever one smells best, and learns from experience: two
 species are rewarding, two are toxic, and after a few bad landings the
 mushroom body suppresses approach to the toxic ones on its own.
 
+Inspired by the [Fruit Fly Brain Observatory](https://www.fruitflybrain.org/),
+which lets you explore and simulate real Drosophila connectome data in 3D.
+This project takes that same idea — real fly circuitry, not a scripted
+AI — and shrinks it down to a small, dependency-free JS sim you can run and
+poke at in a browser.
+
 ## Run it
 
 **Full build** (three.js, chase/top-down/orbit camera, 8-bit dither shader):
