@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>fly brain — foraging</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #140c1c; }
+  #gl { display: block; width: 100vw; height: 100vh; image-rendering: pixelated; }
+  #hud { position: fixed; top: 10px; left: 10px; pointer-events: none; }
+  #toast {
+    position: fixed; top: 14px; right: 14px; max-width: 240px;
+    font: 11px ui-monospace, Menlo, monospace; color: #deeed6;
+    background: rgba(20,12,28,0.88); border: 1px solid #4e4a4e;
+    padding: 7px 12px; opacity: 0; transition: opacity .35s; pointer-events: none;
+  }
+  #legend {
+    position: fixed; bottom: 14px; right: 14px;
+    font: 9px ui-monospace, Menlo, monospace; color: #8595a1;
+    background: rgba(20,12,28,0.8); border: 1px solid #4e4a4e; padding: 8px 10px;
+    line-height: 1.6; pointer-events: none;
+  }
+  @media (max-width: 720px) { #legend { display: none; } }
+  .sw { display: inline-block; width: 8px; height: 8px; margin-right: 5px; }
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="hud"></canvas>
+<div id="toast"></div>
+<div id="legend">
+  <div><span class="sw" style="background:#6daa2c"></span>fed — nectar</div>
+  <div><span class="sw" style="background:#d04648"></span>fed — toxin</div>
+  <div><span class="sw" style="background:#dad45e"></span>refused to land</div>
+  <div style="margin-top:5px;color:#6dc2ca">trail = behaviour state</div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
