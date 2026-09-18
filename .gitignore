@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# node (package.json is present but nothing is installed yet)
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# logs / local scratch
+*.log
+.env
